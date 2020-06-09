@@ -20,7 +20,7 @@ a{
     margin-top: 50px;
 }
 #firstbutton{
-    font-size: 60px;
+    font-size: 50px;
     font-family:Gabriola;
     color: white;
     background-color: black;
@@ -86,10 +86,15 @@ a{
     background: #2ecc71;
     color: black;
   }
+  /* styling of error messages */
+  #err_pass,#err_user{
+    color: red;
+    font-size: 16px;
+  }
   /* todo table */
 table {
     width: 50%;
-    margin-left: 300px;
+    margin-left: 330px;
     text-align: center;
 }
 th {
@@ -104,7 +109,8 @@ td {
 }
 /* header */
 .navbar-bright {
-  background-color:#111166;
+  /* background-color:#bd3e85; */
+  background-color:#720017;
   color:#fff;
   margin-bottom: 0;
   border-width: 0;
@@ -120,7 +126,7 @@ td {
 }
 
 .navbar-bright li > a:hover {
-  background-color:#000044;
+  background-color:black;
 }
 #one{
   margin-left: 880px;
@@ -133,12 +139,16 @@ input[type=checkbox]{
 /* done button */
 #done{
   margin-top: 70px;
-  margin-left: 1130px;
+  margin-left: 600px;
   margin-bottom: 30px;
   width: 90px;
   height: 35px;
   border-radius: 20px;
   position: sticky;
+  background-color: pink;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* heading of main page */
 #mainhead{
@@ -147,4 +157,10 @@ input[type=checkbox]{
   padding-left: 340px;
   font-family: Lucida Handwriting;
   color: white;
+}
+#para{
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-left: 300px;
 }
