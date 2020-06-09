@@ -40,8 +40,15 @@ $(document).ready(function(){
         success: function(list) {
             for (var i=0; i<list.length; i++) {
                 var row = $("<tr><td>" + list[i].id+ "</td><td>" + list[i].title+"</td><td>"+list[i].completed+"</td><td>"+"<input type='checkbox'>"+"</td></tr>");
-                 
-                $('#dataTable').append(row);
+                if(list[i].completed==true)
+                {
+                    row+= "<tr><td>" + list[i].id+ "</td><td>" + list[i].title+"</td><td>"+list[i].completed+"</td><td>"+"<input type='checkbox' disabled>"+"</td></tr>"
+                }
+                else{
+                    row+= "<tr><td>" + list[i].id+ "</td><td>" + list[i].title+"</td><td>"+list[i].completed+"</td><td>"+"<input type='checkbox'>"+"</td></tr>"
+
+                }
+                $('#dataTable').append(row);    
             }
         },
         error: function(jqXHR, textStatus, errorThrown){
