@@ -8,6 +8,7 @@ function validate(callback){
     if(ruser.test(user)){
         if(rpass.test(pass)){
             document.getElementById("err_pass").innerHTML = "";
+            document.getElementById("err_user").innerHTML = "";
             // return true;
             callback();
         }
